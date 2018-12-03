@@ -1,6 +1,6 @@
 CC = gcc
 CFLAG = -Wall -Wextra -Werror
-SRC = main.c del_s_op.c
+SRC = main.c del_s_op.c op.c
 SRC_DIR = ./src
 SRC_C = $(patsubst %, $(SRC_DIR)/%, $(SRC))
 OBJ = $(SRC:.c=.o)

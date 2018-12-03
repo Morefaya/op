@@ -1,6 +1,6 @@
 #include "op.h"
 
-static t_list	*op(char **str)
+/*static t_list	*op(char **str)
 {
 	char	*start;
 	int	i;
@@ -45,7 +45,7 @@ static t_list	*op(char **str)
 	}
 	(*str)++;
 	return (tmp);
-}
+}*/
 
 static void	display_s_op(t_list *lst)
 {
@@ -80,6 +80,7 @@ int		main(int ac, char **av)
 	while ((tmp = op(&str)))
 		ft_lstadd(&new, tmp);
 	ft_lstrev(&new);
+	//--> maybe here: a fct ==> while (lst) {op(lst->content->str)}
 	display_s_op(new);
 	ft_lstdel(&new, (void(*)(void*, size_t))del_s_op);
 	return (0);

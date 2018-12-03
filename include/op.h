@@ -12,5 +12,6 @@ typedef struct	s_op
 }		t_op;
 
 void	del_s_op(t_op *content, size_t size);
+t_list	*op(char **str);
 
 #endif
